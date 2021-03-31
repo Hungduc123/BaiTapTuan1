@@ -2,22 +2,27 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="375dp"
-    android:layout_height="812dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/onboardingone"
     tools:context=".Onboarding_one">
 
-    <ImageView
+
+    <ImageButton
         android:id="@+id/imageView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="154dp"
-        android:layout_marginTop="41.1dp"
-        android:layout_marginEnd="154dp"
+
+        android:layout_marginTop="4dp"
+
+        android:background="@drawable/circlebtn"
+        app:backgroundTint="#FFFE724C"
+        android:src="@drawable/ic_action_foward"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18"
-        app:srcCompat="@drawable/next" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <TextView
         android:id="@+id/textView17"
@@ -37,7 +42,7 @@
         android:layout_marginStart="19dp"
         android:layout_marginTop="12dp"
         android:text="Our app can send you everywhere, even space. For only $2.99 per month"
-        android:textSize="17"
+        android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 </androidx.constraintlayout.widget.ConstraintLayout>
