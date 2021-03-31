@@ -2,33 +2,132 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="375dp"
+    android:layout_width="match_parent"
     android:layout_height="812dp"
     android:background="@drawable/signup"
     tools:context=".VerificationCode">
+    <ImageButton
+        android:id="@+id/imageView"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="310dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="132dp" />
+
+        android:fontFamily="@font/sofia_pro_semibold"
+        android:text="Vefification Code"
+        android:textSize="36.41sp"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="26sp"
+        tools:layout_editor_absoluteY="180sp" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="182dp" />
 
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="79dp"
-        android:layout_height="70dp"
-        android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="296dp" />
+        android:fontFamily="@font/sofia_pro_semibold"
+        android:text="Please type the verification code sent to prelookstudio@gmail.com"
+        android:textSize="14sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="26sp"
+        tools:layout_editor_absoluteY="232sp" />
+
+
+    <TableRow
+        android:id="@+id/table1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27sp"
+        tools:layout_editor_absoluteY="301sp">
+
+        <EditText
+            android:id="@+id/editTextNumber1"
+            android:layout_width="65sp"
+            android:layout_height="65sp"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#FE724C"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:textSize="27.2sp"
+            android:background="@drawable/rectangle_switch"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="27sp"
+            tools:layout_editor_absoluteY="301sp" />
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="65sp"
+            android:layout_height="65sp"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#FE724C"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:textSize="27.2sp"
+            android:background="@drawable/rectangle_switch"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextNumber3"
+            android:layout_width="65sp"
+            android:layout_height="65sp"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#FE724C"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:textSize="27.2sp"
+            android:background="@drawable/rectangle_switch"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextNumber4"
+            android:layout_width="65sp"
+            android:layout_height="65sp"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#FE724C"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:textSize="27.2sp"
+            android:background="@drawable/rectangle_switch"
+            tools:ignore="MissingConstraints" />
+
+    </TableRow>
+   <TableRow
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/table1">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="I don't recevie a code!"
+           android:fontFamily="@font/sofia_pro_medium"
+           android:textSize="16sp"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" Please resend"
+           android:textColor="#FD8E70"
+           android:fontFamily="@font/sofia_pro_medium"
+           android:textSize="16sp"/>
+
+   </TableRow>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
