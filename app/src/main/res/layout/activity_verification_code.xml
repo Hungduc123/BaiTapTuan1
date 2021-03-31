@@ -22,12 +22,14 @@
         android:layout_height="wrap_content"
 
         android:fontFamily="@font/sofia_pro_semibold"
+        android:textColor="@color/black"
+
         android:text="Vefification Code"
         android:textSize="36.41sp"
-
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="26sp"
-        tools:layout_editor_absoluteY="180sp" />
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        android:layout_marginTop="100dp"
+        />
 
     <TextView
         android:id="@+id/textView16"
@@ -37,9 +39,10 @@
         android:fontFamily="@font/sofia_pro_semibold"
         android:text="Please type the verification code sent to prelookstudio@gmail.com"
         android:textSize="14sp"
+        android:textColor="#9796A1"
+
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="26sp"
-        tools:layout_editor_absoluteY="232sp" />
+        app:layout_constraintTop_toBottomOf="@id/textView15" />
 
 
     <TableRow
@@ -49,30 +52,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="27sp"
-        tools:layout_editor_absoluteY="301sp">
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView16">
 
         <EditText
             android:id="@+id/editTextNumber1"
             android:layout_width="65sp"
             android:layout_height="65sp"
             android:layout_margin="10dp"
-            android:ems="10"
+            android:ems="1"
             android:inputType="number"
             android:textColor="#FE724C"
             android:fontFamily="@font/sofia_pro_medium"
             android:textSize="27.2sp"
             android:background="@drawable/rectangle_switch"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="27sp"
-            tools:layout_editor_absoluteY="301sp" />
+             />
 
         <EditText
             android:id="@+id/editTextNumber2"
             android:layout_width="65sp"
             android:layout_height="65sp"
             android:layout_margin="10dp"
-            android:ems="10"
+            android:ems="1"
             android:inputType="number"
             android:textColor="#FE724C"
             android:fontFamily="@font/sofia_pro_medium"
@@ -85,7 +87,7 @@
             android:layout_width="65sp"
             android:layout_height="65sp"
             android:layout_margin="10dp"
-            android:ems="10"
+            android:ems="1"
             android:inputType="number"
             android:textColor="#FE724C"
             android:fontFamily="@font/sofia_pro_medium"
@@ -98,7 +100,7 @@
             android:layout_width="65sp"
             android:layout_height="65sp"
             android:layout_margin="10dp"
-            android:ems="10"
+            android:ems="1"
             android:inputType="number"
             android:textColor="#FE724C"
             android:fontFamily="@font/sofia_pro_medium"
@@ -117,6 +119,7 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:text="I don't recevie a code!"
+           android:textColor="#9796A1"
            android:fontFamily="@font/sofia_pro_medium"
            android:textSize="16sp"/>
        <TextView
