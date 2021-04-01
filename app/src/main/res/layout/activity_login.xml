@@ -11,9 +11,11 @@
         android:id="@+id/imageView"
         android:layout_width="38dp"
         android:layout_height="38dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="344dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
 
@@ -39,7 +41,7 @@
         <ImageView
             android:id="@+id/googleLogin"
             android:layout_width="147sp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/googles" />
     </LinearLayout>
@@ -53,7 +55,7 @@
         android:fontFamily="@font/sofia_pro_semibold"
         android:text="Login"
         android:textSize="36.41sp"
-
+android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 

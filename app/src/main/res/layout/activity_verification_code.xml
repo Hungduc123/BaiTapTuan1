@@ -11,9 +11,11 @@
         android:id="@+id/imageView"
         android:layout_width="38dp"
         android:layout_height="38dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="336dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
 
@@ -22,15 +24,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_marginStart="28dp"
         android:layout_marginTop="100dp"
-        android:fontFamily="@font/sofia_pro_semibold"
 
+        android:fontFamily="@font/sofia_pro_semibold"
         android:text="Vefification Code"
         android:textColor="@color/black"
         android:textSize="36.41sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp" />
+        tools:ignore="MissingConstraints" />
 
 
     <TextView
@@ -38,50 +41,50 @@
         android:layout_width="371dp"
         android:layout_height="45dp"
 
+        android:layout_marginStart="28dp"
         android:fontFamily="@font/sofia_pro_semibold"
         android:text="Please type the verification code sent to prelookstudio@gmail.com"
         android:textColor="#9796A1"
-        android:textSize="14sp"
 
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView15"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp" />
+        tools:ignore="MissingConstraints" />
 
     <TableRow
         android:id="@+id/table1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
+        android:layout_marginStart="28dp"
         app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView16">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView16"
+        tools:ignore="MissingConstraints">
 
         <EditText
             android:id="@+id/editTextNumber1"
             android:layout_width="65sp"
             android:layout_height="65sp"
             android:layout_margin="10dp"
+            android:background="@drawable/rectangle_switch"
             android:ems="1"
+            android:fontFamily="@font/sofia_pro_medium"
             android:inputType="number"
             android:textColor="#FE724C"
-            android:fontFamily="@font/sofia_pro_medium"
             android:textSize="27.2sp"
-            android:background="@drawable/rectangle_switch"
-            tools:ignore="MissingConstraints"
-             />
+            tools:ignore="MissingConstraints" />
 
         <EditText
             android:id="@+id/editTextNumber2"
             android:layout_width="65sp"
             android:layout_height="65sp"
             android:layout_margin="10dp"
+            android:background="@drawable/rectangle_switch"
             android:ems="1"
+            android:fontFamily="@font/sofia_pro_medium"
             android:inputType="number"
             android:textColor="#FE724C"
-            android:fontFamily="@font/sofia_pro_medium"
             android:textSize="27.2sp"
-            android:background="@drawable/rectangle_switch"
             tools:ignore="MissingConstraints" />
 
         <EditText
@@ -89,12 +92,12 @@
             android:layout_width="65sp"
             android:layout_height="65sp"
             android:layout_margin="10dp"
+            android:background="@drawable/rectangle_switch"
             android:ems="1"
+            android:fontFamily="@font/sofia_pro_medium"
             android:inputType="number"
             android:textColor="#FE724C"
-            android:fontFamily="@font/sofia_pro_medium"
             android:textSize="27.2sp"
-            android:background="@drawable/rectangle_switch"
             tools:ignore="MissingConstraints" />
 
         <EditText
@@ -102,12 +105,12 @@
             android:layout_width="65sp"
             android:layout_height="65sp"
             android:layout_margin="10dp"
+            android:background="@drawable/rectangle_switch"
             android:ems="1"
+            android:fontFamily="@font/sofia_pro_medium"
             android:inputType="number"
             android:textColor="#FE724C"
-            android:fontFamily="@font/sofia_pro_medium"
             android:textSize="27.2sp"
-            android:background="@drawable/rectangle_switch"
             tools:ignore="MissingConstraints" />
 
     </TableRow>
